@@ -33,7 +33,7 @@ class _TicTacToeState extends State<TicTacToe> {
         width: 500,
         decoration: const BoxDecoration(
             gradient: LinearGradient(
-          colors: [Color(0xff421b65), Color(0xff55a6c3)],
+          colors: [Color.fromARGB(255, 101, 54, 27), Color.fromARGB(255, 195, 188, 85)],
           stops: [0, 1],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -86,7 +86,7 @@ class _TicTacToeState extends State<TicTacToe> {
                   ),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color.fromARGB(177, 26, 39, 49),
+                        backgroundColor: const Color.fromARGB(255, 26, 39, 49),
                         shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(100),
@@ -104,7 +104,7 @@ class _TicTacToeState extends State<TicTacToe> {
                       onPressed: _resetScore,
                       child: const Icon(
                           size: 40,
-                          color: Color.fromARGB(255, 145, 238, 255),
+                          color: Color.fromARGB(255, 255, 255, 255),
                           Icons.restart_alt_rounded))
                 ],
               ),
@@ -146,7 +146,7 @@ class _TicTacToeState extends State<TicTacToe> {
                           child: Container(
                             // padding: const EdgeInsets.all(50),
                             decoration: BoxDecoration(
-                              color: const Color.fromARGB(201, 41, 17, 62),
+                              color: const Color.fromARGB(255, 101, 54, 27),
                               borderRadius:
                                   const BorderRadius.all(Radius.circular(30)),
                               border: Border.all(
@@ -199,7 +199,7 @@ class _TicTacToeState extends State<TicTacToe> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            backgroundColor: const Color.fromARGB(255, 39, 30, 42),
+            backgroundColor: const Color.fromARGB(255, 0, 0, 0),
             // title: const Text("Winner!",
             //     style: TextStyle(
             //         color: Colors.white,
@@ -216,14 +216,9 @@ class _TicTacToeState extends State<TicTacToe> {
             actions: [
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(176, 131, 194, 242),
+                    backgroundColor: const Color.fromARGB(174, 202, 202, 202),
                     shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(100),
-                        topRight: Radius.circular(100),
-                        bottomLeft: Radius.circular(60),
-                        bottomRight: Radius.circular(60),
-                      ),
+                      
                     ),
                     elevation: 10,
                     shadowColor: const Color.fromARGB(255, 0, 0, 0),
